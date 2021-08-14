@@ -1,7 +1,160 @@
 <!DOCTYPE html>
-<head lang="en-US">
-    <title>Example</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="/theme.css">
+<html lang="en">
+<head>
+  <title>Taiwanese School of Atlanta</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="TSAStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+  .mobile{
+    display: none; 
+  }
+    @media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .slideshow{
+    max-height: 260px;
+  }
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+}
+    }
+</style>
 </head>
-<h1>Testing</h1>
+<body>
+<div id="page-container">
+  <div id="content-wrap">  
+<div class="topnav" id="myTopnav">
+
+  <div class="row">
+    <div class="column">
+          <img src="tsalogo.gif" alt="Logo">
+    </div>
+    <div class="column">
+          <img src="taiwaneseschool.gif">
+    </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+          </a>
+  </div>
+
+    <a href="index.html"> Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="infomation.html">Information</a>
+    <a href="activities.html">School Activities</a>
+    <a href="mission.html">Mission</a>
+    <a href="registration.html">Registration Form</a>
+    <a href="officers.html">Officers</a>
+    <a href="links.html">Links</a>
+    <a href="archives.html">Archives</a>
+
+</div>
+
+  <div class="wrapper">
+    <div class="slideshow">
+       <img class="homeSlides" src="opera.jpg" style="width:100%">
+       <img class="homeSlides" src="lion.jpg" style="width:100%">
+       <img class="homeSlides" src="drums.jpg" style="width:100%">
+       <button class="button_left" onclick="plusDivs(-1)">&#10094;</button>
+       <button class="button_right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+  <div style="height: auto;width:25%;text-align:center" class="list">
+    <h3 class="underline">Quick Links</h3>
+    <p>Calendar</p>
+    <a href="2021SpringSchedule.pdf" target="_blank">2021 Spring Schedule</a>
+    <p>Chinese Classes</p>
+   <div class="desktop">
+      <h3 class="underline">Contact Us</h3>
+      <p>3070 Corners North Ct, Peachtree Corners, Ga. 30071 <a href="http://taiwaneseschoolofatlanta.com/our%20new%20address%20map1.htm">Directions</a></p>
+      <p>Phone:678-677-2789, E-mail: <a href="mailto:lydiachen1223@gmail.com">lydiachen1223@gmail.com</a></p>  
+      <p><a href="https://www.facebook.com/Taiwanese-School-of-Atlanta-229501493882159/" target="_blank">TSA Facebook</a></p>
+    </div>
+   </div>
+ </div> 
+
+ <div class="mobile list">
+    <h3 class="underline">Contact Us</h3>
+    <p>3070 Corners North Ct, Peachtree Corners, Ga. 30071 <a href="http://taiwaneseschoolofatlanta.com/our%20new%20address%20map1.htm">Directions</a></p>
+    <p>Phone:678-677-2789, E-mail: <a href="mailto:lydiachen1223@gmail.com">lydiachen1223@gmail.com</a></p>  
+    <p><a href="https://www.facebook.com/Taiwanese-School-of-Atlanta-229501493882159/" target="_blank">TSA Facebook</a></p>
+   </div>
+
+
+  <div style="margin-top:5px;border:none;padding:0px" class="flex-container">
+    <form method="GET" action="drums.html">
+     <input style="width:100%" class="button-display" type="submit" value="Drums">
+      </form>
+    <button onclick="location.href='opera.html';" class="button-display">Opera</button>
+    <button onclick="location.href='puppet.html';"class="button-display">Puppet</button>
+    <button onclick="location.href='dough.html';"class="button-display">Dough Figure</button>
+  </div>
+
+  <div class="flex-container-empty">
+     <div class="container">
+        <h2>Taiwanese Culture Scholarship</h2>
+      </div>
+     <div class="container">
+        <h2>Winners of the Taiwanese Culture Scholarship</>
+      </div>  
+  </div>
+</div>
+</div>
+
+<footer class="footer">
+  <p>Proud to be Taiwanese American</p>
+</footer>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("homeSlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length};
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+
+</html>
+

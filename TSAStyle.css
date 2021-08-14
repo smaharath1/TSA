@@ -1,0 +1,259 @@
+h1{
+  background-color: #339933;
+  text-align: center;
+  width: 100%;
+}
+p{
+  padding: 5px;
+}
+.p1{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+body{
+  margin: 0;
+  background-color: hsl(60, 95%, 85%);
+}
+.footer{
+  width: 100%;
+  background-color: #339933;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  margin: 0;
+  bottom: 0;
+}
+.left{
+  margin-left: 15px;
+  width: auto;
+  padding: 5px;
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.column {
+  float: left;
+  padding:5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: inline;
+}
+.topnav {
+  background-color: white;
+  overflow: hidden;
+  border-style:solid; 
+  border-color:#339933;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+.flex-container{
+  border: 6px double #339933;
+  position: relative;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  margin:auto;
+  background: white;
+}
+.flex-container-empty{
+  position: relative;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: auto;
+  margin: 50px;
+}
+.flex-container button{
+  width: 25%;
+}
+.flex-container form{
+  width: 25%;
+}
+.profile{
+  width:auto;
+  margin:auto;
+  padding: 15px;
+  border: 3px solid black;
+  background-color: #DCDCDC;
+  text-align: center;
+}
+.list{
+  background-color: white;
+  border: 6px double #339933;
+}
+.video-container{
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-top: 80px;
+  margin-bottom: 100px
+}
+.video-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.info{
+  margin: auto;
+  width: 75%;
+  border:6px double #339933;
+  background-color: white;
+}
+.info p{
+  font-size: 18px;
+}
+.link{
+  width: 100%;
+  border-left: 2px solid black;
+}
+.underline{
+  border-bottom: 2px solid black;
+}
+.homeSlides{
+  display:none;
+}
+.slideshow{
+  position: relative;
+  overflow:hidden;
+  width: 75%;
+  height:500px;
+  background-color: black;
+}
+.slideshow > div{
+  position: absolute;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+.slideshow img{
+  max-width:800px;
+  max-height: 500px;
+}
+.button_left{
+  position:absolute;
+  top:50%;
+  left:0%;
+}
+.button_right{
+  position:absolute;
+  top:50%;
+  right:0%;
+}
+.wrapper{
+  display: flex;
+  width: auto;
+  height: auto;
+}
+.archive{
+  background-color: white;
+  border: 6px double #339933;
+}
+.archive p{
+  text-decoration: underline;
+}
+.tab{
+  display: block;
+}
+.tab button:hover{
+  background-color: #ddd;
+}
+.button-display{
+  height: 100px;
+  border-radius: 5px;
+}
+.container{
+  width: 50%;
+  text-align: center;
+  margin: 5px;
+  border: 3px solid green;
+  background-color: white;
+}
+.large-white{
+  color: #fff; 
+  font-size: 40px;
+}
+.black-underline{
+  border-bottom: 2px solid black;
+}
+#page-container{
+  position: relative;
+  margin: 8px;
+  min-height: 85vh;
+}
+#content-wrap{
+  padding-bottom: 2.5rem;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .flex-container{
+    flex-direction: column;
+  }
+  .profile{
+    margin-bottom: 10px;
+    width: auto;
+  }
+  .column {
+  float: left;
+  padding:5px;
+  }
+
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+}
+}
